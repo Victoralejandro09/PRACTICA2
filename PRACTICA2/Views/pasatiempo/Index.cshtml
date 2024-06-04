@@ -1,0 +1,20 @@
+﻿@model List<string>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Mis Pasatiempos</h2>
+        <ul class="list-group">
+            @foreach (var hobby in Model)
+            {
+                <li class="list-group-item">@hobby</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>
+

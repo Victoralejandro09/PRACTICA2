@@ -1,0 +1,20 @@
+﻿@model List<Artista>
+
+@foreach (var artista in Model)
+{
+    <div class="col-xl-10">
+         <img class="img-fluid" src="@artista.Imagen" alt="@artista.Nombre" />
+        <h2>@artista.Nombre</h2>
+        <p>@artista.Resumen</p>
+        <ul>
+            @foreach (var cancion in artista.canciones)
+            {
+                <li>@cancion</li>
+            }
+        </ul>
+        <p>
+            <a href="@artista.Enlace">Más información</a>
+
+        </p>
+    </div>
+}
