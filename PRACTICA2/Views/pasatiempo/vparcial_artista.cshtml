@@ -7,8 +7,12 @@
         <h2>@artista.Nombre</h2>
         <p>@artista.Resumen</p>
         <ul>
+            <h2>
+            <p>canciones:</p>
+            </h2>
             @foreach (var cancion in artista.canciones)
             {
+              
                 <li>@cancion</li>
             }
         </ul>
